@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewControllerViewModel: MainInterface, MainInteractorOutput {
+class MainViewModel: MainInterface, MainInteractorOutput {
     
     var input: MainInteractorInput { return self }
     var output: MainInteractorOutput { return self }
@@ -20,7 +20,7 @@ class MainViewControllerViewModel: MainInterface, MainInteractorOutput {
 }
 
 // MARK - Data-binding InPut
-extension MainViewControllerViewModel: MainInteractorInput {
+extension MainViewModel: MainInteractorInput {
     func saveMessageData(message: String?) {
         guard let msg = message,
             !msg.isEmpty,

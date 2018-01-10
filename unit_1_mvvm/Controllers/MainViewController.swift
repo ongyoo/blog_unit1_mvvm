@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure(MainViewControllerViewModel())
+        configure(MainViewModel())
     }
     
     func configure(_ interface: MainInterface) {
