@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		54FD80012005CEC3006122C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD80002005CEC3006122C2 /* AppDelegate.swift */; };
-		54FD80032005CEC3006122C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD80022005CEC3006122C2 /* ViewController.swift */; };
 		54FD80062005CEC3006122C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FD80042005CEC3006122C2 /* Main.storyboard */; };
 		54FD80082005CEC3006122C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54FD80072005CEC3006122C2 /* Assets.xcassets */; };
 		54FD800B2005CEC3006122C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FD80092005CEC3006122C2 /* LaunchScreen.storyboard */; };
 		54FD80162005CEC3006122C2 /* unit_1_mvvmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD80152005CEC3006122C2 /* unit_1_mvvmTests.swift */; };
+		54FD80232005D93F006122C2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD80222005D93F006122C2 /* MainViewController.swift */; };
+		54FD80252005D9A2006122C2 /* MainViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD80242005D9A2006122C2 /* MainViewControllerViewModel.swift */; };
+		54FD80272005DAC0006122C2 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD80262005DAC0006122C2 /* MainInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,6 @@
 /* Begin PBXFileReference section */
 		54FD7FFD2005CEC3006122C2 /* unit_1_mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unit_1_mvvm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FD80002005CEC3006122C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54FD80022005CEC3006122C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54FD80052005CEC3006122C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54FD80072005CEC3006122C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54FD800A2005CEC3006122C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,9 @@
 		54FD80112005CEC3006122C2 /* unit_1_mvvmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unit_1_mvvmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FD80152005CEC3006122C2 /* unit_1_mvvmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unit_1_mvvmTests.swift; sourceTree = "<group>"; };
 		54FD80172005CEC3006122C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54FD80222005D93F006122C2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		54FD80242005D9A2006122C2 /* MainViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewModel.swift; sourceTree = "<group>"; };
+		54FD80262005DAC0006122C2 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,9 @@
 		54FD7FFF2005CEC3006122C2 /* unit_1_mvvm */ = {
 			isa = PBXGroup;
 			children = (
+				54FD80212005D902006122C2 /* Models */,
+				54FD80202005D8F1006122C2 /* Controllers */,
 				54FD80002005CEC3006122C2 /* AppDelegate.swift */,
-				54FD80022005CEC3006122C2 /* ViewController.swift */,
 				54FD80042005CEC3006122C2 /* Main.storyboard */,
 				54FD80072005CEC3006122C2 /* Assets.xcassets */,
 				54FD80092005CEC3006122C2 /* LaunchScreen.storyboard */,
@@ -94,6 +99,23 @@
 				54FD80172005CEC3006122C2 /* Info.plist */,
 			);
 			path = unit_1_mvvmTests;
+			sourceTree = "<group>";
+		};
+		54FD80202005D8F1006122C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54FD80222005D93F006122C2 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		54FD80212005D902006122C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54FD80242005D9A2006122C2 /* MainViewControllerViewModel.swift */,
+				54FD80262005DAC0006122C2 /* MainInteractor.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54FD80032005CEC3006122C2 /* ViewController.swift in Sources */,
+				54FD80252005D9A2006122C2 /* MainViewControllerViewModel.swift in Sources */,
 				54FD80012005CEC3006122C2 /* AppDelegate.swift in Sources */,
+				54FD80232005D93F006122C2 /* MainViewController.swift in Sources */,
+				54FD80272005DAC0006122C2 /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZS5M9529T;
 				INFOPLIST_FILE = unit_1_mvvm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.komsit.unit-1-mvvm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,6 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZS5M9529T;
 				INFOPLIST_FILE = unit_1_mvvm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.komsit.unit-1-mvvm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
