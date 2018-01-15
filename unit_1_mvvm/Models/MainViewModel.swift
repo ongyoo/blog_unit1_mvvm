@@ -24,7 +24,7 @@ extension MainViewModel: MainInteractorInput {
     func saveMessageData(message: String?) {
         guard let msg = message,
             !msg.isEmpty,
-             msg == "" else {
+             msg != "" else {
             didError?()
             return
         }
